@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Profile Dashboard with Functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Demo App</h2>
+            <ul>
+                <li><a href="#" class="active" id="nav-dashboard">Dashboard</a></li>
+                <li><a href="#" id="nav-profile">Profile</a></li>
+                <li><a href="#" id="nav-settings">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>User Details Preview</h1>
+                <div class="header-btns">
+                    <button id="profile-btn">👤 </button>
+                    <button id="settings-btn">⚙️ </button>
+                    <button id="load-btn">Load New Data</button>
+                </div>
+            </header>
+
+            <!-- Card Grid -->
+            <div class="card-grid" id="card-container">
+                <!-- JavaScript මගින් Data insert වේ -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Popup Modal for Profile & Settings -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Modal Title</h2>
+            <div id="modal-body">
+                <!-- Dynamic Content goes here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
